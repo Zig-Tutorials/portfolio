@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Page Title</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">       
+        <div class="nav-link-wrapper active-nav-link">
+          <a href ="index.html">Home</a>
+        </div>
+           
+          <div class="nav-link-wrapper">
+          <a href ="about.html ">About</a>
+          </div>        
+      </div>
+        
+      <div class="right-side">          
+        <div class="brand">
+          <div>D.Z. Vision</div>
+        </div>        
+      </div>     
+    </div>
+     
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Social.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="file:///C:/Users/dcore/OneDrive/Desktop/Portfolio%20HTML%20Website/Social_Media_App/social.html"><img src="Pictures/images/social.media.png"></a>
+            </div>
+              
+            <div class= "subtitle">
+              Zig Social<br> My Social App
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Music.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/play.png" alt="">
+            </div>
+              
+            <div class="subtitle">
+              Music App
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/NBA.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/stats1.png" alt="">
+            </div>
+              
+            <div class="subtitle">
+              NBA player stats<br>
+              Search Engine
+            </div>
+          </div>
+        </div>
+            
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Blog.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/blog..png" alt="">
+            </div>
+              
+            <div class="subtitle">
+              Its a blog<br> Speak your mind
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Fashion\ Design.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/fashion..png" alt="">
+            </div>
+              
+            <div class="subtitle">
+              Need help with your current style? <br>
+              Fashion Trend App
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Sticky\ Notes.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/list.png" alt="">
+            </div>
+              
+            <div class="subtitle">
+              Sticky Notes App
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Coding\ pic.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/cap.png" alt="">
+            </div>
+              
+            <div class="subtitle">
+              My current experience<br> with different code languages
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Plants.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/cam.png" alt="">
+            </div>
+              
+            <div class="subtitle">
+              Visual Arts I've made.
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(Pictures/images/back\ ground\ black.jpg)"></div>
+           
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Pictures/images/credit.png" alt="">
+            </div>
+                  
+            <div class="subtitle">
+              Budget Builder App
+            </div>
+          </div>
+        </div>
+            
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  const portofolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+  
+  portofolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      portfolioItem.childNodes[1].classList;
+      portfolioItem.childNodes[1].classList.add('img-darken')
+    })
+
+    portfolioItem.addEventListener('mouseout', () => {
+      portfolioItem.childNodes[1].classList;
+      portfolioItem.childNodes[1].classList.remove('img-darken')
+    })
+  })
+</script>
+
+</html>
