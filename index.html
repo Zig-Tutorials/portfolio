@@ -1,179 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Page Title</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZigSocial - Responsive Social Media Website Using HTML, CSS & JavaScript</title>
+  <!--ICONSCOUT CDN-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  <!--STYLESHEET-->
+  <link rel="stylesheet" href="Social.css">
 </head>
 <body>
-  <div class="container">
-    <div class="nav-wrapper">
-      <div class="left-side">       
-        <div class="nav-link-wrapper active-nav-link">
-          <a href ="index.html">Home</a>
-        </div>
-           
-          <div class="nav-link-wrapper">
-          <a href ="about.html ">About</a>
-          </div>        
+  <nav>
+    <div class="container">
+      <h2 class="log">
+        ZigSocial
+      </h2>
+      <div class="search-bar">
+        <i class="uil uil-airplay"></i>
+        <input type="search" placeholder="Search for creators, inspiration, and projects">
       </div>
-        
-      <div class="right-side">          
-        <div class="brand">
-          <div>D.Z. Vision</div>
-        </div>        
-      </div>     
-    </div>
-     
-    <div class="content-wrapper">
-      <div class="portfolio-items-wrapper">
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Social.jpg)"></div>
-
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <a href="file:///C:/Users/dcore/OneDrive/Desktop/Portfolio%20HTML%20Website/Social_Media_App/social.html"><img src="Pictures/images/social.media.png"></a>
-            </div>
-              
-            <div class= "subtitle">
-              Zig Social<br> My Social App
-            </div>
-          </div>
+      <div class="create">
+        <label class="btn btn-primary" for="create-post">Create</label>
+        <div class="profile-photo">
+          <img src="images/profile-pic.png">
         </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Music.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/play.png" alt="">
-            </div>
-              
-            <div class="subtitle">
-              Music App
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/NBA.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/stats1.png" alt="">
-            </div>
-              
-            <div class="subtitle">
-              NBA player stats<br>
-              Search Engine
-            </div>
-          </div>
-        </div>
-            
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Blog.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/blog..png" alt="">
-            </div>
-              
-            <div class="subtitle">
-              Its a blog<br> Speak your mind
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Fashion\ Design.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/fashion..png" alt="">
-            </div>
-              
-            <div class="subtitle">
-              Need help with your current style? <br>
-              Fashion Trend App
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Sticky\ Notes.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/list.png" alt="">
-            </div>
-              
-            <div class="subtitle">
-              Sticky Notes App
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Coding\ pic.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/cap.png" alt="">
-            </div>
-              
-            <div class="subtitle">
-              My current experience<br> with different code languages
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/Plants.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/cam.png" alt="">
-            </div>
-              
-            <div class="subtitle">
-              Visual Arts I've made.
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(Pictures/images/back\ ground\ black.jpg)"></div>
-           
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="Pictures/images/credit.png" alt="">
-            </div>
-                  
-            <div class="subtitle">
-              Budget Builder App
-            </div>
-          </div>
-        </div>
-            
       </div>
     </div>
-  </div>
-</body>
-<script>
-  const portofolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+  </nav>
   
-  portofolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      portfolioItem.childNodes[1].classList;
-      portfolioItem.childNodes[1].classList.add('img-darken')
-    })
+  <!-------------MAIN----------------->
+  <main>
+    <div class="container">
+      <!-----------LEFT------------->
+      <div class="left">
+        <a class="profile">
+          <div class="profile-photo">
+           <img src="images/profile-pic.png">
+          </div>
+          <div class="handle">
+            <h4>Mr.Long</h4>
+            <p class="text-muted">
+              @Steve
+            </p>
+          </div>
+        </a>
+        
+        <!-------SIDEBAR-------->
+        <div class="sidebar">
+         <a class="menu-item active">
+           <span><i class="uil uil-estate"></i></span><h3>Home</h3>
+          </a>
 
-    portfolioItem.addEventListener('mouseout', () => {
-      portfolioItem.childNodes[1].classList;
-      portfolioItem.childNodes[1].classList.remove('img-darken')
-    })
-  })
-</script>
+          <a class="menu-item">
+            <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+          </a>
 
+          <a class="menu-item" id="notifications">
+            <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+            <!-------------------Notification POPUP---------------------->
+            <div class="notification-popup">
+              <div>
+                <div class="profile-photo">
+                  <img src="images/member-1.png">
+                </div>
+                <div class="notification-body">
+                  <b>Dyson Williams</b> accepted your friend request
+                  <small class="text-muted">2 DAYS AGO</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="images/member-2.png">
+                </div>
+                <div class="notification-body">
+                  <b>Lebron James</b> Commented on your post
+                  <small class="text-muted">5 HOURS AGO</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="images/member-3.png">
+                </div>
+                <div class="notification-body">
+                  <b>Steve Wilcox</b> and <b>69,089 others</b> liked your post
+                  <small class="text-muted">1 HOUR AGO</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="images/Coding pic.jpg">
+                </div>
+                <div class="notification-body">
+                  <b>Tech Guy</b> and <b> 59 others</b> followed you
+                  <small class="text-muted">34 MINS AGO</small>
+                </div>
+              </div>
+            </div>
+            <!--------END NOTIFICATION POPUP--------->
+          </a>
+          <a class="menu-item" id="messages-notifications">
+            <span><i class="uil uil-comments-alt"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+          </a>
+
+          <a class="menu-item">
+            <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+          </a>
+
+          <a class="menu-item">
+            <span><i class="uil uil-analytics"></i></span><h3>Analytics</h3>
+          </a>
+
+          <a class="menu-item">
+            <span><i class="uil uil-comment-alt-image"></i></span><h3>Theme</h3>
+          </a>
+
+          <a class="menu-item active">
+            <span><i class="uil uil-cog"></i></span><h3>Settings</h3>
+          </a>
+        </div>
+        <!--------------END OF SIDEBAR----------------->
+        <label for="create-post"class="btn btn-primary">Create Post</label>
+      </div>
+      <!------------MIDDLE--------------->
+      <div class="middle">
+        This site is currently being created
+      </div>
+      <!-------------RIGHT------------------->
+      <div class="right">
+        The end product will be a social media app, called ZigSocial.
+      </div>
+    </div>
+  </main>
+</body>
 </html>
